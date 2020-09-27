@@ -66,7 +66,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testAddTwoPositiveNumbers() {
+	void testAddTwoPositiveNumbers() {
 		// Arrange
 		final int a = 2;
 		final int b = 3;
@@ -80,7 +80,7 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void multiply_shouldReturnTheProduct_ofTwoIntegers() {
+	void multiply_shouldReturnTheProduct_ofTwoIntegers() {
 		// Arrange
 		final int a = 42;
 		final int b = 11;
@@ -94,7 +94,7 @@ public class CalculatorTest {
 
 	@ParameterizedTest(name = "{0} x 0 doit être égal à 0")
 	@ValueSource(ints = { 1, 2, 42, 1011, 5089 })
-	public void multiply_shouldReturnZero_ofZeroWithMultipleIntegers(int arg) {
+	void multiply_shouldReturnZero_ofZeroWithMultipleIntegers(int arg) {
 		// Arrange -- Tout est prêt !
 
 		// Act -- Multiplier par zéro
